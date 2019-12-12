@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const colors = require("colors");
 
 ////setting up environmental variables////
-dotenv.config({ path: "./database/db.config.js" });
+dotenv.config({ path: "./config/config.env" });
 
 if (process.env.NODE_ENV === "development") {
   server.use(morgan("dev"));
